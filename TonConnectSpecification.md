@@ -1,4 +1,4 @@
-# TON Connect
+tab# TON Connect
 
 * [Overview](#overview)
 * [Definitions](#definitions)
@@ -62,7 +62,7 @@ See [tonweb-mnemonic](https://github.com/toncenter/tonweb-mnemonic) for definiti
 RootLoginKey = HMAC-SHA256(key: "TonLogin.Root", data: WalletSeed)
 ```
 
-### Service Login Key
+esk### Service Login Key
 
 256-bit secret key specific to a given service derived from [Root Login Key](#root-login-key).
 
@@ -108,7 +108,7 @@ Nonce is 24-byte string generated from random _by the client_.
 SessionNonce = crypto_box_random_nonce()
 ```
 
-### Session Authenticator
+tab### Session Authenticator
 
 Authenticator is a binary string that proves to the Service that the current session (represented by the [Session Keypair](#session-keypair)) is correctly authenticated by the [Client ID](#client-id).
 
